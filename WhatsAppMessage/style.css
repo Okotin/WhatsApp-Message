@@ -1,7 +1,7 @@
 * {
 	font-family: "Segoe UI";
 	box-sizing: border-box;
-	font-size: min(5vw, 50px);
+	font-size: min(max(12px, 5vw), 40px);
 }
 
 body {
@@ -12,14 +12,14 @@ body {
 	height: 100vh;
 	display: flex;
 	align-items: center;
-	border: 2px solid blue;
+	/*border: 2px solid blue;*/
 }
 
 .phone_container {
 	margin: 0 auto;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	width: 70%;
-	max-width: 600px;
+	max-width: 800px;
 }
 
 .phone_form {
@@ -31,7 +31,7 @@ body {
 }
 
 .phone_form * {
-	margin: 10px 0;
+	margin: 0.3em 0;
 }
 
 .button {
@@ -49,13 +49,10 @@ body {
 	color: white;
 }
 
-#phone_label {
-}
-
-
 #phone {
 	text-align: center;
 	font-size: 1.7em;
-	height: 1em;
+	height: 1.5em;
 	width: 100%;
+	background-color: #edf8f5;
 }
