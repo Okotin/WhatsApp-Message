@@ -1,0 +1,37 @@
+* {
+	font-family: Arial;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.page_container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background-color: #EEE;
+	border: 2px solid blue;
+}
+
+.phone_container {
+	font-size: 1.2em;
+	margin: 0 auto;
+	border: 1px solid red;
+	width: 70%;
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#phone_label {
+	margin-bottom: 20px;
+}
+
+#phone {
+	text-align: center;
+	font-size: 1.5em;
+	height: 40px;
+}
