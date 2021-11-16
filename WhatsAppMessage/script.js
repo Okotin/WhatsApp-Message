@@ -10,7 +10,7 @@ function submitIfEnter(e) {
 }
 
 function openChat() {
-	const num = document.getElementById("phone").value;
+	const num = phone.value;
 	if (num) {
 		window.location = "https://api.whatsapp.com/send?phone=" + num;
 	}
