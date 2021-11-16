@@ -37,11 +37,16 @@ html, body {
 	text-transform: uppercase;
 	font-weight: 600;
 	word-wrap: break-word;
+	cursor: pointer;
 }
 
 .button--green {
 	background-color: #01E675;
 	color: white;
+}
+
+.button--green:hover {
+	background-color: #00cf69;
 }
 
 #phone {
