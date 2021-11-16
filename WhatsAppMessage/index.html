@@ -4,15 +4,14 @@
 		<title>WhatsApp Message</title>
 		<link rel="icon" type="image/png" href="favicon.png">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 	<body>
 		<div class="page_container">
 			<div class="phone_container">
-				<form class="phone_form">
-					<label id="phone_label" for="phone">Enter the phone number:</label>
-					<input type="tel" id="phone" name="phone">
-					<input type="submit" class="button button--green" id="submit_phone" value="Open WhatsApp">
-				</form>
+				<label id="phone_label" for="phone">Enter the phone number:</label>
+				<input type="tel" id="phone" name="phone">
+				<input type="button" class="button button--green" id="submit_phone" value="Open WhatsApp" onclick="openChat()">
 			</div>
 		</div>
 	</body>
