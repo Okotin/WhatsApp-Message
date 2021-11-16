@@ -4,20 +4,19 @@
 	font-size: min(max(12px, 5vw), 40px);
 }
 
-body {
+html, body {
+	height: 100%;
 	margin: 0;
 }
 
 .page_container {
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	align-items: center;
-	/*border: 2px solid blue;*/
 }
 
 .phone_container {
 	margin: 0 auto;
-	/*border: 1px solid red;*/
 	width: 70%;
 	max-width: 800px;
 	display: flex;
