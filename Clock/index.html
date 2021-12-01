@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body style="height: 100%; margin: 0; background-color: black; cursor: none; display: flex; justify-content: center; align-items: center;">
+    <div id="clock" style="font-family: Arial; color: white;">a</div>
+    <script>
+        let clock = setInterval(function() {
+            const d = new Date();
+            const s = d.getSeconds();
+            const m = d.getMinutes();
+            const h = d.getHours();
+            const S = (s < 10 ? "0" : "") + s;
+            const M = (m < 10 ? "0" : "") + m;
+            const H = (h < 10 ? "0" : "") + h;
+            document.getElementById("clock").innerHTML = H + ":" + M + ":" + S;
+        }, 1000);
+    </script>
+</body>
+</html>
