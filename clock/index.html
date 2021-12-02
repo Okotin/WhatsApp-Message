@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock</title>
 </head>
-<body style="height: 100%; margin: 0; background-color: black; cursor: none; display: flex; justify-content: center; align-items: center;">
-    <div id="clock" style="font-family: Arial; color: white;"></div>
+<body style="height: 100%; margin: 0; background-color: black; cursor: none; display: flex; justify-content: center; align-items: center;" onclick="hide()">
+    <div id="clock" style="font-family: Arial; color: white;">a</div>
     <script>
-        let clock = setInterval(function() {
+        let timer = setInterval(function() {
             const d = new Date();
             const s = d.getSeconds();
             const m = d.getMinutes();
@@ -19,6 +19,11 @@
             const H = (h < 10 ? "0" : "") + h;
             document.getElementById("clock").innerHTML = H + ":" + M + ":" + S;
         }, 1000);
+        function hide() {
+            const c = document.getElementById("clock");
+            const v = c.style.visibility;
+            c.style.visibility = c.style.visibility == "hidden" ? "visible" : "hidden"; 
+        }
     </script>
 </body>
 </html>
